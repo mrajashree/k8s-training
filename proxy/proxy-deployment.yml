@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: proxy-deployment
@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: proxy
-        image: nginx
+        image: nginx:1.13
         ports:
         - containerPort: 80
         volumeMounts:

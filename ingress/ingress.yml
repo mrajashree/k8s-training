@@ -16,7 +16,7 @@ kind: Ingress
 metadata:
   name: nginx
   annotations:
-    http.port: "9001"
+    http.port: "9002"
 spec:
   backend:
     serviceName: nginx
